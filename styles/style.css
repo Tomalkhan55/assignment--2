@@ -4,11 +4,73 @@
 
 
 
+
 /* body Styles */
 body {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+
+
+/* nav-related-style */
+.nav-ber-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 130px;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-bar {
+    display: inline;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    /* margin-right: 2.5rem; */
+    padding-left: 2rem;
+}
+
+.black-title {
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.tomato-title {
+    color: #FF5400;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-img {
+    width: 40px;
+    height: 50px;
+}
+
+.nav-ber li {
+    color: #424247;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 
 /* Banner Related Styles */
 .banner-section {
@@ -340,9 +402,24 @@ footer p h3 {
 }
 
 /* Mobile device reponsive */
+
 @media screen and (max-width: 600px) {
     body {
         margin: 0;
+    }
+
+    /* nav related responsive */
+    .nav-ber-section{
+        flex-direction: column;
+        margin: 10px;
+        align-items: start;
+    }
+    .nav-bar{
+        display: hide;
+    }
+
+    .nav-bar ul li {
+        display: none;
     }
 
     .btn-field {
