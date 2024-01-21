@@ -1,6 +1,6 @@
-.hide {
+/* .hide {
     display: none;
-}
+} */
 
 
 
@@ -22,6 +22,8 @@ body {
 
 .banner-content {
     text-align: center;
+    margin-bottom: 0;
+
 }
 
 .banner-title {
@@ -29,27 +31,29 @@ body {
     font-family: Mulish;
     font-size: 4rem;
     font-weight: 800;
-    padding: 100px 280px 0px 280px;
+    margin: 100px 280px 0px 280px;
+    text-align: center;
 }
 
-.bannr-description {
+.banner-description {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
+    margin: 20px 240px;
 }
 
 /* input styles */
 .btn-field {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
     gap: 15px;
     border: 0;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
-    position: relative;
+    margin-left: 180px;
+    margin-right: 500px;
+    border-radius: 1rem;
 }
 
 .btn-1,
@@ -60,6 +64,7 @@ body {
     height: 52px;
     border-radius: 8px;
     background: #FFF;
+    border: 0px;
 
 }
 
@@ -257,7 +262,11 @@ body {
     margin-bottom: 20px;
 }
 
-.contact-img {}
+/* .contact-img img {
+    width: 700px;
+    height: 500px;
+
+} */
 
 .subscribe-btn {
     text-align: center;
@@ -273,8 +282,8 @@ body {
     height: 120px;
     transform: rotate(-19.628deg);
     position: relative;
-    bottom: 180px;
-    left: 50%;
+    bottom: 230px;
+    left: 67.5%;
 }
 
 .discount-badge h5 {
@@ -303,6 +312,11 @@ footer {
     padding: 100px 300px;
 }
 
+.footer-content img {
+    width: 40px;
+    height: 40px;
+}
+
 footer p h3 {
     padding: 30px;
 }
@@ -310,14 +324,17 @@ footer p h3 {
 .footer-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
-.footer-content h3{
+
+.footer-content h3 {
     font-family: Mulish;
     font-size: 32px;
     font-weight: 800;
 
 }
+
 .footer-content h3 span {
     color: #FF5400;
 }
@@ -328,9 +345,34 @@ footer p h3 {
         margin: 0;
     }
 
+    .btn-field {
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 60px;
+        padding-bottom: 15px;
+    }
+
+    .btn-1,
+    .btn-2,
+    .btn-3,
+    .common-btn {
+        width: 100%;
+
+    }
+
     .banner-section {
         width: 100%;
         padding: 5px;
+        margin: 10px;
+    }
+
+    .banner-title {
+        margin: 10px;
+        font-size: 22px;
+    }
+
+    .banner-description {
+        margin: 10px;
     }
 
     .head-container {
@@ -399,10 +441,33 @@ footer p h3 {
 
     }
 
-    .contact-img {
-        width: 335px;
+    .contact-img img {
+        width: 350px;
         height: 300px;
     }
 
+    .discount-badge {
+        width: 214px;
+        height: 79px;
+        position: relative;
+        bottom: 130px;
+        left: 35%;
+    }
+    .discount-badge h5 {
+        margin: 0;
+        font-size: 15.854px;
+        font-weight: 400;
+        padding: 10px;
+    }
+    
+    .discount-badge h3 {;
+        font-size: 21px;
+    }
+
+    footer {
+        margin: 2px;
+        margin-top: 50px;
+        padding: 20px;
+    }
 
 }
